@@ -1,0 +1,10 @@
+1. Fonksiyon = kullaniciGiris [Kullanıcı id ve şifresini int türünden isteyip doğru ise giriş yaptırıyor ve paneli gösteriyor].
+2. Fonksiyon = panelGoster [Kullanıcının işlem yapmak istediği bölümleri gösteriyor].
+3. Fonksiyon = sepetGoster [Sepetteki ürünleri listelemek için kullanılıyor].
+4. Fonksiyon = urunSil [Sepetten ürün silmek için kullanılıyor].
+5. Fonksiyon = urunEkle [Sepete ürün eklemek için kullanıyor].
+6. Fonksiyon = urunGoster [Ürünler menüsünü göstermek için kullanılıyor].
+
+
+
+
