@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#ifdef __cplusplus__
-  #include <cstdlib>
-#else
-  #include <stdlib.h>
-#endif
+#include <stdlib.h>
 
 int kullaniciGiris(int self);
 int panelGoster(int self);
@@ -12,6 +8,7 @@ int sepetGoster(int menuNo);
 int urunSil(char urunNo[20]);
 int urunEkle(char urunNo[20]);
 int urunGoster(int menuNo);
+int cikisYap(int self);
 /* Teknoloji Kategorisi Ürünleri */
     char t1[50] ="Uzaktan kumandalı araba\n";
     char t2[50] ="Playstation 5\n";
@@ -72,6 +69,7 @@ int main()
 }
 
 int kullaniciGiris(int d_self){
+     system("clear");
      int username; 
     int password; 
     int girisKontrol;
@@ -95,29 +93,40 @@ int kullaniciGiris(int d_self){
 }     
 }
 
+int cikisYap(int d_self){
+  int giriscek;
+  giriscek = kullaniciGiris(2);
+}
+
 int panelGoster(int d_self){
     int menu_no;
     system("clear");
    printf("İşlem yapmak istediğiniz numarayı giriniz:\n\n1- Sepete Ürün Ekle\n2- Sepetten Ürün Sil\n3- Sepeti Göster\n4- Ürünleri Göster\n5- Çıkış\n");
    scanf("%d",&menu_no);
    if(menu_no == 1){
+       system("clear");
          int uruneklecek;
     uruneklecek = urunGoster(2);
    }else if(menu_no == 2){
+       system("clear");
        int sepetcek3;
     sepetcek3 = sepetGoster(2);
     
 
    }else if(menu_no == 3){
+       system("clear");
         int sepetgostercek;
         sepetgostercek = sepetGoster(1);
    }else if(menu_no == 4){
+    
       int urungoster;
         urungoster = urunGoster(1);
    }else if(menu_no == 5){
-      int kullaniciGiris_cek;
-        kullaniciGiris_cek = kullaniciGiris(2);
+      
+      int giriscek;
+        giriscek = cikisYap(2);
    }else{
+      
        printf("Böyle bir menü bulunmamaktadır!\n");
         int panelGoster_cek;
         panelGoster_cek = panelGoster(2);
@@ -128,7 +137,7 @@ int sepetGoster(int menuNo){
    if (menuNo == 1)
    {
         printf("Sepetiniz Aşağıdadır\n");
-    printf("--------------------------");
+    printf("--------------------------\n");
     int panelgostercek2;
     if(h1_d == 1){
        printf("No h1 = %s",h1);

@@ -4,7 +4,13 @@
 4. Fonksiyon = urunSil [Sepetten ürün silmek için kullanılıyor].
 5. Fonksiyon = urunEkle [Sepete ürün eklemek için kullanıyor].
 6. Fonksiyon = urunGoster [Ürünler menüsünü göstermek için kullanılıyor].
+7. Fonksiyon = cikisYap [Kullanıcı çıkışını sağlayıp kullaniciGiris fonksiyonuna yönlendiriyor]
 
+kütüphaneler
+
+#include <stdio.h> //default kütüphane
+#include <string.h> //  karakter dizileriyle alakalı pek çok kullanışlı fonksiyonu bünyesinde bulundurur
+#include <stdlib.h> //clear kullanmak için
 
 
 
